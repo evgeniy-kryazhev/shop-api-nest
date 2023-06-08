@@ -1,0 +1,7 @@
+{
+  "type": "sqlite",
+  "database": "database.sqlite",
+  "entities": ["src/**/*.entity.{ts,js}"],
+  "migrations": ["src/migrations/**/*.{ts,js}"],
+  "migrationsTableName": "custom_migration_table"
+}
