@@ -5,13 +5,14 @@ import { ServiceModule } from './services/services.modules';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { dataSourceConfig } from './ormconfig';
 import { LoggerModule } from 'nestjs-pino';
+import { CategoryController } from './controllers/category/category,controller';
 
 @Module({
-  controllers: [ProductCotroller],
+  controllers: [ProductCotroller, CategoryController],
   imports: [
     LoggerModule.forRoot({
       pinoHttp: {
-        level: 'error',
+        level: 'debug',
         transport: {
           target: 'pino-pretty',
         },

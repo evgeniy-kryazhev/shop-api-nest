@@ -1,5 +1,6 @@
 import { DataSourceOptions } from 'typeorm';
 import { Product } from './core/product/product';
+import { Category } from './core/category/category';
 
 export const dataSourceConfig: DataSourceOptions = {
   type: 'mysql',
@@ -8,7 +9,7 @@ export const dataSourceConfig: DataSourceOptions = {
   username: 'db_user',
   password: 'db_user_pass',
   database: 'app_db',
-  entities: [Product],
+  entities: [Product, Category],
   extra: {
     charset: 'utf8mb4_unicode_ci',
   },

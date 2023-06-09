@@ -34,6 +34,7 @@ export class ProductService implements IProductService {
       order: { name: 'ASC' },
       skip: args?.skip || 0,
       take: args?.take || MAX_TAKE,
+      relations: ['category'],
       where:
         args != null
           ? {
@@ -45,7 +46,10 @@ export class ProductService implements IProductService {
   }
 
   findById(id: string): Promise<Product> {
-    return this.productRepository.findOneBy({ id });
+    return this.productRepository.findOne({
+      where: { id },
+      relations: ['category'],
+    });
   }
 
   async update(id: string, product: Omit<Product, 'id'>): Promise<void> {
