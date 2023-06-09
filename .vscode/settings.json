@@ -1,11 +1,16 @@
 {
     "sqltools.connections": [
         {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
             "previewLimit": 50,
-            "driver": "SQLite",
-            "database": "${workspaceFolder:api}/shoppingDB",
-            "name": "shop",
-            "group": "shop"
+            "server": "77.232.136.167",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "shop-db",
+            "database": "app_db",
+            "username": "db_user"
         }
     ],
     "sqltools.useNodeRuntime": true
