@@ -5,3 +5,4 @@ pipeline:
       - npm i --quiet
       - npm run lint
       - npm test
+      - test:e2e
