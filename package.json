@@ -23,14 +23,18 @@
     "nest:migration:run": "npm run typeorm migration:run"
   },
   "dependencies": {
+    "@fastify/static": "^6.10.2",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@nestjs/platform-fastify": "^9.4.2",
     "@nestjs/swagger": "^6.3.0",
     "@nestjs/typeorm": "^9.0.1",
+    "fastify": "^4.18.0",
     "global": "^4.4.0",
     "mysql2": "^3.3.3",
     "nestjs-pino": "^3.2.0",
+    "pg": "^8.11.0",
     "pino-http": "^8.3.3",
     "pino-pretty": "^10.0.0",
     "reflect-metadata": "^0.1.13",

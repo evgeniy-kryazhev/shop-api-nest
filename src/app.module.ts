@@ -12,7 +12,7 @@ import { CategoryController } from './controllers/category/category,controller';
   imports: [
     LoggerModule.forRoot({
       pinoHttp: {
-        level: 'debug',
+        level: 'info',
         transport: {
           target: 'pino-pretty',
         },

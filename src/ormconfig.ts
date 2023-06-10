@@ -3,12 +3,12 @@ import { Product } from './core/product/product';
 import { Category } from './core/category/category';
 
 export const dataSourceConfig: DataSourceOptions = {
-  type: 'mysql',
-  host: '77.232.136.167',
-  port: 3306,
-  username: 'db_user',
-  password: 'db_user_pass',
-  database: 'app_db',
+  type: 'postgres',
+  host: '188.225.33.132',
+  port: 5432,
+  username: 'gen_user',
+  password: '6eg490qtk3',
+  database: 'default_db',
   entities: [Product, Category],
   extra: {
     charset: 'utf8mb4_unicode_ci',
