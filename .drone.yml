@@ -1,0 +1,7 @@
+pipeline:
+  run-tests:
+    image: node:6.3.0
+    commands:
+      - npm i --quiet
+      - npm run lint
+      - npm test
